@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone-Paper-Scissor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+        <div class="score-board">
+          <div class="score">
+            <div class="score-text">Computer Score</div>
+            <div class="score-number comp-score">0</div>
+          </div>
+          <div class="score">
+            <div class="score-text">Your Score</div>
+            <div class="score-number user-score">0</div>
+          </div>
+        </div>
+      </header>
+      <!-- Game Options -->
+      <section class="choices">
+        <div class="choice" id="stone">
+          <div class="choice-image stone">
+            <img src="./images/stone.png" alt="stone" />
+          </div>
+        </div>
+        <div class="choice" id="paper">
+          <div class="choice-image paper">
+            <img src="./images/paper.png" alt="Paper" />
+          </div>
+        </div>
+        <div class="choice" id="scissor">
+          <div class="choice-image scissor">
+            <img src="./images/scissor.png" alt="Scissor" />
+          </div>
+        </div>
+      </section>
+      <section class="results hidden">
+        <h2 class="result-heading">You Picked</h2>
+        <h2 class="result-heading">pc picked</h2>
+        <div class="result-user"></div>
+        <div class="result-content">
+          <h3 class="result-content-heading1"></h3>
+          <p class="result-content-heading2"></p>
+          <button class="play-again result-button">play again</button>
+        </div>
+        <div class="result-computer">
+          <div class="choice-image paper">
+            <img src="./images/paper.png" alt="Paper" />
+          </div>
+        </div>
+      </section>
+      <section class="winner hidden">
+        <div class="trophy">
+          <img src="images/stars.png" alt="" srcset="" />
+          <img
+            src="images/trophy.png"
+            alt=""
+            srcset=""
+            style="position: absolute; left: 30%; top: 35%"
+          />
+        </div>
+        <div class="winner-text">
+          <h3>Hurray!!</h3>
+          <p>YOU WON THE GAME</p>
+          <button class="play-again">play again</button>
+        </div>
+      </section>
+      <div class="rule-display">
+        <h3>Game Rules</h3>
+        <div class="rule">
+          <span class="list"></span
+          ><span class="text">
+            Rock beats scissors, scissors beat paper, and paper beats
+            rock.</span
+          >
+        </div>
+        <div class="rule">
+          <span class="list"></span
+          ><span class="text">
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”</span
+          >
+        </div>
+        <div class="rule">
+          <span class="list"></span
+          ><span class="text">
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time</span
+          >
+        </div>
+        <div class="rule">
+          <span class="list"></span
+          ><span class="text">
+            If both players lay down the same hand, each player lays down
+            another hand</span
+          >
+        </div>
+
+        <div id="remove-rule">X</div>
+      </div>
+      <div class="button">
+        <button class="show-rule">Rules</button>
+        <button class="next hidden">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
